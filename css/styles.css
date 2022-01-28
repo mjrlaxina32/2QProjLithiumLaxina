@@ -131,6 +131,97 @@ figcaption {
 	margin: 10px;
 }
 
+#prof-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+ul#sprites {
+	display:flex;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	justify-content: space-evenly;
+}
+
+#sprites a {
+	display: inline-block;
+}
+
+#discord {
+	background: url('../images/sprites.png') no-repeat -11px -10px;
+	width: 28px;
+	height: 28px;
+}
+
+#discord:hover {
+	background: url('../images/sprites.png') no-repeat -11px -41px;
+	width: 28px;
+	height: 29px;	
+}
+
+#discord:active {
+	background: url('../images/sprites.png') no-repeat -11px -73px;
+	width: 28px;
+	height: 28px;	
+}
+
+#github {
+	background: url('../images/sprites.png') no-repeat -43px -10px;
+	width: 28px;
+	height: 28px;
+}
+
+#github:hover {
+	background: url('../images/sprites.png') no-repeat -43px -41px;
+	width: 28px;
+	height: 29px;	
+}
+
+#github:active {
+	background: url('../images/sprites.png') no-repeat -43px -73px;
+	width: 28px;
+	height: 28px;	
+}
+
+#facebook {
+	background: url('../images/sprites.png') no-repeat -74px -10px;
+	width: 28px;
+	height: 28px;
+}
+
+#facebook:hover {
+	background: url('../images/sprites.png') no-repeat -74px -41px;
+	width: 28px;
+	height: 29px;
+	
+}
+
+#facebook:active {
+	background: url('../images/sprites.png') no-repeat -74px -73px;
+	width: 28px;
+	height: 28px;	
+}
+
+#gmail {
+	background: url('../images/sprites.png') no-repeat -106px -10px;
+	width: 27px;
+	height: 28px;
+}
+
+#gmail:hover {
+	background: url('../images/sprites.png') no-repeat -105px -41px;
+	width: 29px;
+	height: 29px;	
+}
+
+#gmail:active {
+	background: url('../images/sprites.png') no-repeat -105px -73px;
+	width: 29px;
+	height: 28px;	
+}
+
 .prof-desc {
 	text-align: left;
 	margin-left: 10px;
