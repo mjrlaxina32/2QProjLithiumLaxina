@@ -9,6 +9,9 @@ header {
     background: #309cff;
     display: flex;
     justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .logo {
@@ -17,22 +20,51 @@ header {
 	margin: 10px;
 }
 
+.logo:hover {
+	transform: scale(1.1,1.1);
+}
+
 .site-header {
 	display: flex;
 }
 
 nav {
-	margin: 10px;
 	display: flex;
+	margin-right: 10px;
+	align-items: center;
 }
 
-nav a{
-	padding: 10px;
+nav h3{
+	margin: 0px;
+	padding: 25pt 10px 25pt;
 	justify-content: space-between;
 }
-
-a {
+	
+a {/*#1e90ff*/
 	text-decoration: none;
+	color: #072227;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #35858B;
+}
+
+a:active {
+	text-decoration: none;
+	color: #AEFEFF;
+}
+
+nav h3:hover {
+	text-decoration: none;
+	background-color: #00BDFF;
+	color: #072227;
+}
+
+nav h3:active {
+	text-decoration: none;
+	background-color: #00D7EB;
+	color: #072227;
 }
 
 .banner img {
@@ -40,115 +72,39 @@ a {
     height: 200px;
     object-fit: cover;
 }
-
-/*home*/
-.cards {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-	margin-left: 0px;
-}
-
-.card {
-	background: white;
-    border-width: 2px;
-	border-color: #000000;
-    width: 23%;
-	height: 200px;
+/*footer*/
+footer {
+	background: #3F4756;
+	bottom: 0;
+	width: 100%;
+	margin-top: 500px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.card .title {
-    padding: 5px;
-    text-align: center;
-}
-
-.card .media img {
-	display: block;
-    width: 90%;
-    height: 120px;
-	margin: auto;
-    object-fit: cover;
-}
-
-.description {
-	padding: 10px;
-}
-/*end of home*/
-
-/*content template*/
-.subject {
-	margin: 10px;
-}
-
-.inside-content { 
-	display: flex;
-}
-
-.inside-paragraph { 
-	margin: 10px;
-}
-
-.inside-image img{
-	height: 200px;
-	margin: 10px;
-}
-/*end of content template*/
-
-figcaption {
+	justify-content: center;
+	flex-direction: column;	
 	text-align: center;
+	padding: 20px 0px 20px;
 }
 
-/*about me*/
-.aboutme-content{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 10px;
+#footer-small {
+	padding: 5px;
 }
 
-.aboutme-paragraph{
-	margin: 10px;
-	width: 50%;
-}
-
-.profile {
-	background: white;
-    border-width: 2px;
-	border-color: #000000;
-    width: 30%;
-	height: auto;
-	display: flex;
-	justify-content: space-around;
-	
-}
-
-.profile img {
-	display: block;
-    width: auto;
-    height: 150px;
-	margin: 10px;
-}
-
-#prof-col {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-ul#sprites {
+ul.sprites {
 	display:flex;
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
-#sprites a {
+ul.sprites li{
+	padding: 5px 10px 0px;
+}
+
+.sprites a {
 	display: inline-block;
 }
-
+/*sprites - w/help from spritecow, sprites made in canva*/
 #discord {
 	background: url('../images/sprites.png') no-repeat -11px -10px;
 	width: 28px;
@@ -222,6 +178,143 @@ ul#sprites {
 	height: 28px;	
 }
 
+ul.footer-nav {
+	display:flex;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	justify-content: center;
+}
+
+ul.footer-nav li{
+	padding: 5px 10px 0px;
+}
+
+.footer-nav a {
+	display: inline-block;
+}
+/*end of footer*/
+/*home*/
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+	margin-left: 0px;
+}
+
+.card {
+	background: white;
+    border-width: 2px;
+	border-color: #000000;
+    width: 23%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.card:hover {
+	background: #cae8ff;
+}
+
+.card .title {
+    padding: 5px;
+    text-align: center;
+}
+
+.card .media img {
+	display: block;
+    width: 90%;
+    height: 120px;
+	margin: auto;
+    object-fit: cover;
+}
+
+.description {
+	padding: 10px;
+}
+/*end of home*/
+
+/*content template*/
+.subject {
+	margin: 10px;
+}
+
+.inside-content { 
+	display: flex;
+	justify-content: center;
+}
+
+.inside-content p{
+	margin: 10px;
+}
+.inside-paragraph { 
+	margin: 10px;
+}
+
+.inside-image img{
+	height: 200px;
+	margin: 10px;
+}
+/*end of content template*/
+
+figcaption {
+	text-align: center;
+}
+
+/*about me*/
+.aboutme-content{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+.aboutme-paragraph{
+	margin: 10px;
+	width: 50%;
+}
+
+.profile {
+	background: white;
+    border-width: 2px;
+	border-color: #000000;
+    width: 30%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.profile img {
+	display: block;
+    width: auto;
+    height: 150px;
+	margin: 10px;
+}
+
+#prof-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+ul#sprites-am {
+	display:flex;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	justify-content: space-evenly;
+}
+
+.inline-link{
+	text-decoration: none;
+	color: white;
+}
+
+#sprites-am a {
+	display: inline-block;
+}
+
 .prof-desc {
 	text-align: left;
 	margin-left: 10px;
@@ -253,10 +346,18 @@ ul#sprites {
 	height: 300px;
 	margin: 5px;
 }
+
+.gallery img:hover {
+	transform: scale(1.05,1.05);
+}
 /*end of gallery*/
 
 #timelapse {
 	display: flex;
 	justify-content: center;
+}
+
+#t-art {
+	margin: 50px;
 }
 
